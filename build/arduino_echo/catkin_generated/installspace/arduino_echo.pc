@@ -1,8 +1,0 @@
-prefix=/home/alexj/ROS/ros_personal/install
-
-Name: arduino_echo
-Description: Description of arduino_echo
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/alexj/ROS/ros_personal/install/lib 
-Requires: 
