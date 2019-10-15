@@ -1,0 +1,8 @@
+prefix=/home/alexj/ROS/ros_personal/devel
+
+Name: rosserial_mbed
+Description: Description of rosserial_mbed
+Version: 0.8.0
+Cflags: -I/home/alexj/ROS/ros_personal/devel/include
+Libs: -L/home/alexj/ROS/ros_personal/devel/lib 
+Requires: message_runtime
