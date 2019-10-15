@@ -8,7 +8,7 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "shout");
     ros::NodeHandle nh;
 
-    ros::Publisher shouting_person = nh.advertise<std_msgs::String>("yelled words",1000);
+    ros::Publisher shouting_person = nh.advertise<std_msgs::String>("yelled_words",1000);
 
     ros::Rate loop_rate(0.33);
 
@@ -16,7 +16,7 @@ int main(int argc, char **argv)
     {
         std_msgs::String msg;
         std::stringstream ss;
-        ss << "I'm yelling this!";
+        ss << "I'm yelling this";
 
         msg.data = ss.str();
         ROS_INFO("Yelled");
