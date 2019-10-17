@@ -11,7 +11,7 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "listener");
     ros::NodeHandle nh;
 
-    ros::Subscriber sub = nh.subscribe("yelled words", 1000, shoutHeard);
+    ros::Subscriber sub = nh.subscribe("echoed_words", 1000, shoutHeard);
 
     ros::spin();
 
