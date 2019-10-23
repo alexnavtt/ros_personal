@@ -16,7 +16,7 @@ int main(int argc, char **argv)
     {
         std_msgs::String msg;
         std::stringstream ss;
-        ss << "I'm yelling this";
+        ss << "Hello, I don't know";
 
         msg.data = ss.str();
         ROS_INFO("Yelled");
