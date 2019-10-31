@@ -137,6 +137,8 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(plot src/show_image.cpp)
 target_link_libraries(plot ${catkin_LIBRARIES})
+add_executable(guide src/guide.cpp)
+target_link_libraries(guide ${catkin_LIBRARIES})
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the

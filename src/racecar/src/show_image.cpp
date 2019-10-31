@@ -47,7 +47,7 @@ int main(int argc, char **argv)
 	ros::NodeHandle nh;
 
 	ros::Subscriber sub = nh.subscribe("center_location", 20, update_center);
-	ros::Rate r(60);
+	ros::Rate r(200);
 
 	while(ros::ok())
 	{
