@@ -1,0 +1,8 @@
+<launch>
+	<node pkg="racecar" type="guide" name="guide" output="screen">
+	<rosparam command="load" file="$(find racecar)/param/circle_parameters.yaml"/>
+	</node>
+
+	<node pkg="racecar" type="plot" name="plot">
+	</node>
+</launch>

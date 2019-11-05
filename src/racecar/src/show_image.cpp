@@ -27,7 +27,7 @@ void plot_image()
 
         //Define parameters for a circle to overlay on frame
         int radius = 50;
-        int linewidth = 1;
+        int linewidth = -1;
 	int linetype = 8;
 	int shift = 0;
 	cv::Scalar color = cv::Scalar(0, 0, 255);

@@ -11,12 +11,21 @@ int main(int argc, char **argv)
 
 	ros::Rate loop_rate(100);
 
+	int x_stretch;
+	int y_stretch;
+
+	nh.getParam("/guide/x_stretch", x_stretch);
+	nh.getParam("/guide/y_stretch", y_stretch);
+
+	ROS_INFO("%i", x_stretch);
+	ROS_INFO("%i", y_stretch);
+
 	double t = 0.0;
 
 	while(ros::ok())
 	{
-		double x = 300 + 50*std::sin(t/25.0);
-		double y = 300 + 50*std::cos(t/25.0);
+		double x = 300 + x_stretch*50*std::sin(t/25.0);
+		double y = 300 + y_stretch*50*std::cos(t/25.0);
 		std_msgs::Float64MultiArray center;
 		
 		center.data.push_back(x);
