@@ -10,8 +10,11 @@ cv::VideoCapture cap(0);
 
 void update_center(const std_msgs::Float64MultiArray::ConstPtr& center_loc)
 {
-	center.x = center_loc->data[0];
-	center.y = center_loc->data[1];
+	if (center_loc->data.size() > 0)
+	{
+		center.x = center_loc->data[0];
+		center.y = center_loc->data[1];
+	}
 }
 
 void plot_image()
