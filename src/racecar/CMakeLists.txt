@@ -139,6 +139,8 @@ add_executable(plot src/show_image.cpp)
 target_link_libraries(plot ${catkin_LIBRARIES})
 add_executable(guide src/guide.cpp)
 target_link_libraries(guide ${catkin_LIBRARIES})
+add_executable(guide_PS4 src/controller_guide.cpp)
+target_link_libraries(guide_PS4 ${catkin_LIBRARIES})
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
