@@ -1,0 +1,9 @@
+<launch>
+	<node pkg="racecar" type="guide_PS4" name="guide_PS4" output="screen"></node>
+
+	<node pkg="joy" type="joy_node" name="joy_node">
+		<param name="dev" value="/dev/input/js1"/>
+	</node>
+
+	<node pkg="racecar" type="plot" name="plot"></node>
+</launch>
